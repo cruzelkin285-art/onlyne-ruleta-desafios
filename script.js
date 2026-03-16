@@ -10,7 +10,11 @@ const desafios = [
     "¡Imita a un animal!",
     "¡Di algo en otro idioma!",
     "¡Haz una pose ridícula!",
-    "¡Grita '¡Soy el rey del mundo!'!"
+    "¡Grita '¡Soy el rey del mundo!'!",
+    "¡Haz un baile loco!",
+    "¡Pon una cara graciosa!",
+    "¡Haz un salto de estrella!",
+    "¡Ríe de manera falsa!"
 ];
 
 let girando = false;
@@ -25,7 +29,7 @@ girarBtn.addEventListener('click', () => {
     
     setTimeout(() => {
         const anguloFinal = grados % 360;
-        const seccion = Math.floor(anguloFinal / 45);
+        const seccion = Math.floor(anguloFinal / 30);
         const desafio = desafios[seccion];
         resultadoDiv.textContent = `Tu desafío: ${desafio}`;
         resultadoDiv.classList.add('mostrar');
