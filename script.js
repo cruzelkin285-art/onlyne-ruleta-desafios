@@ -24,6 +24,10 @@ girarBtn.addEventListener('click', () => {
     girando = true;
     resultadoDiv.classList.remove('mostrar');
     
+    // Sonido al girar
+    const audio = new Audio('https://www.soundjay.com/misc/sounds/click-01.wav');
+    audio.play();
+    
     const grados = Math.floor(Math.random() * 360) + 360 * 5; // Múltiples vueltas
     ruleta.style.transform = `rotate(${grados}deg)`;
     
