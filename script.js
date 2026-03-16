@@ -33,6 +33,12 @@ girarBtn.addEventListener('click', () => {
         const desafio = desafios[seccion];
         resultadoDiv.textContent = `Tu desafío: ${desafio}`;
         resultadoDiv.classList.add('mostrar');
+        // Efecto de confeti impresionante
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
         girando = false;
     }, 4000);
 });
